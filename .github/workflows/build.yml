@@ -39,7 +39,7 @@ jobs:
             echo "========================"
             echo "FIO_DIR = ${FIO_SRCDIR}"
             echo "========================"
-            sudo bash ../libcstor/tests/cstor/script/test_uzfs.sh -T all || exit 1
+            sudo bash FIO_SRCDIR=$PWD/../fio ../libcstor/tests/cstor/script/test_uzfs.sh -T all || exit 1
           else
             sudo /sbin/modprobe zfs
             /sbin/ztest || exit 1
