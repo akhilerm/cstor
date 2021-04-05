@@ -36,6 +36,9 @@ jobs:
           if [ "${{ matrix.uzfs_build }}" = 1 ]; then
             export FIO_SRCDIR=$PWD/../fio
             sudo bash ./print_debug_info.sh &
+            echo "========================"
+            echo "FIO_DIR = ${FIO_SRCDIR}"
+            echo "========================"
             sudo bash ../libcstor/tests/cstor/script/test_uzfs.sh -T all || exit 1
           else
             sudo /sbin/modprobe zfs
