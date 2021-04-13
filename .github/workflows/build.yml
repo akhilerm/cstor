@@ -1,6 +1,9 @@
 name: Build & CI
 
 on:
+  create:
+    branches:
+      - 'v*'
   push:
     branches:
       - develop
