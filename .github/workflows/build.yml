@@ -2,7 +2,7 @@ name: Build & CI
 
 on:
   create:
-    branches:
+    branch:
       - 'v*'
   push:
     branches:
