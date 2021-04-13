@@ -2,20 +2,20 @@ name: Build & CI
 
 on:
   create:
-    branch:
-      - 'v*'
+    branches:
+      - 'v[0-9]+\.[0-9]+\.x'
   push:
     branches:
       - develop
       - zfs-0.7-release
-      - 'v*'
+      - 'v[0-9]+\.[0-9]+\.x'
     paths-ignore:
       - 'changelogs/**'
   pull_request:
     branches:
       - develop
       - zfs-0.7-release
-      - 'v*'
+      - 'v[0-9]+\.[0-9]+\.x'
     paths-ignore:
       - 'changelogs/**'
 
