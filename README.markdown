@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/openebs/cstor.svg?branch=develop)](https://travis-ci.org/openebs/cstor)
+[![Build Status](https://github.com/openebs/cstor/actions/workflows/build.yml/badge.svg)](https://github.com/openebs/cstor/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/zfsonlinux/zfs/branch/master/graph/badge.svg)](https://codecov.io/gh/zfsonlinux/zfs)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopenebs%2Fcstor.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopenebs%2Fcstor?ref=badge_shield)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2739/badge)](https://bestpractices.coreinfrastructure.org/projects/2739)
@@ -167,8 +167,8 @@ Make sure to run cstyle on your changes before you submit a pull request:
 make cstyle
 ```
 
-And assure that the tests are passing. For possible tests to run see .travis.yml
-file in root directory. Here is an example of running a couple of available
+And assure that the tests are passing. For possible tests to run see [build](https://github.com/openebs/cstor/blob/develop/.github/workflows/build.yml#L24) 
+Here is an example of running a couple of available
 tests:
 
 ```bash
